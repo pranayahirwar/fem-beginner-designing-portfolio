@@ -1,0 +1,364 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--mono);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+a {
+  color: var(--magenta);
+}
+
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*
+#################################################
+# GRADIANT AND BACKGROUND COLORS
+################################################# 
+*/
+
+.background-dkblue {
+  background-color: var(--dkblue);
+}
+
+.background-plum {
+  background-color: var(--plum);
+}
+
+.gradient-line-break {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 23, 228, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
+  height: 3px;
+}
+
+/*
+################################################
+# INTRO STYLES
+################################################
+*/
+#intro {
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#intro p {
+  font-size: 1rem;
+  /* Don't associate any unit with line height otherwise when user try to increase font size of a font might overlap based on the unit. Not assigning unit to line height indicates take 1.5 times of the line height whatever the font sizes */
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+}
+
+#intro span {
+  font-size: 4rem;
+  color: var(--aqua);
+  font-family: var(--sans);
+  display: block;
+}
+
+#intro h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+/*
+################################################
+# NAVIGATION BAR 
+################################################
+*/
+#navigation-bar {
+  /*   border: 2px solid red; */
+  font-family: var(--mono);
+  font-size: 80%;
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+#navigation-bar h1 {
+  font-family: var(--sans);
+}
+
+#navigation-bar ul {
+  /*   border: 2px solid blue; */
+  /*  BELOW PROPERTY REMOVES DOT FROM THE UL LIST HTML ELEMENT  */
+  list-style-type: none;
+  /*  BELOW TWO PROPERTY HELPs TO REMOVE INDENT IN THE UL LIST HTML ELEMENT  */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+#navigation-bar li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+#navigation-bar a {
+  /*   border: 2px solid red; */
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+}
+
+#navigation-bar nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--aqua);
+}
+
+#navigation-bar nav h1 [class*="fa-"] {
+  font-size: 150%;
+  color: var(--aqua);
+}
+
+#navigation-bar nav a:hover,
+#navigation-bar nav a [class*="fa-"]:hover {
+  color: var(--magenta);
+}
+
+#navigation-bar .resume-button {
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#navigation-bar .resume-button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+/*
+#################################################
+# CONTACT SECTION STYLE
+#################################################
+*/
+
+#contact {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em 0em 1em 0em;
+}
+
+#contact p:first-of-type {
+  font-size: 1rem;
+}
+
+#contact p:last-of-type {
+  margin-top: 3rem;
+}
+
+.contact-button {
+  background-color: var(--magenta);
+  font-family: var(--mono);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+/*
+################################################
+# PROJECT SECTION STYLE
+################################################
+*/
+
+#projects {
+  /*   border: 3px solid red; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem 10rem 1rem;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  /* still finding the answer to know, why we might be using calc() for margin-bottom, why can't we directly multiply the value and use the result like, 3.75rem like this `margin-bottom: 3.75rem;` */
+  margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+  color: var(--aqua);
+}
+
+#projects h4 {
+  font-size: 1rem;
+}
+
+.black-box {
+  background-color: var(--black);
+  font-family: var(--sans);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: var(--white);
+  line-height: 1.3rem;
+}
+
+#projects ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+#projects img {
+  /* width: 100%; */
+  margin: 2rem 0rem 4rem 0rem;
+  padding: 1rem;
+  border-top: 1px solid var(--aqua);
+  border-left: 1px solid var(--aqua);
+  border-radius: 10px;
+}
+
+/*
+#################################################
+# FOOTER SECTION STYLE
+#################################################
+*/
+
+footer {
+  /*     border: 3px solid yellowgreen; */
+  max-width: 600px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+footer h2 {
+  font-family: var(--mono);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer ul {
+  /* border: 3px solid red; */
+  list-style-type: none;
+  margin: 2rem 0rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  text-align: center;
+  gap: 2rem;
+  font-size: 2rem;
+  /*   text-decoration: none; */
+}
+
+/*
+################################################
+# MEDIA QUERY FOR PROJECTS
+################################################
+*/
+
+@media (min-width: 650px) {
+  #projects article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+  }
+
+  #projects img {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+
+  #projects .grid-child-text {
+    order: 2;
+    text-align: right;
+    grid-column: 5/11;
+    grid-row: 1/2;
+  }
+
+  /* REVERSING ARTICLE HERE */
+  /* Instead of Defining another (.reverse) class as we can use CSS n-th:child() Select to reverse even articles */
+  #projects .reverse img {
+    grid-row: 1/2;
+    grid-column: 6/11;
+  }
+
+  #projects .reverse .grid-child-text {
+    text-align: left;
+    grid-column: 1/7;
+    grid-row: 1/2;
+  }
+
+  #projects .reverse ul {
+    justify-content: flex-start;
+  }
+}
+
+/*
+################################################
+# MEDIA QUERY FOR NAVIGATION BAR
+################################################
+*/
+
+@media (min-width: 850px) {
+  #navigation-bar nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #navigation-bar li:first-child {
+    flex-basis: auto;
+    text-align: center;
+    /*  I really didn't understood how using the below property moving our h1 and other lis to extream ends    */
+    margin-right: auto;
+  }
+}

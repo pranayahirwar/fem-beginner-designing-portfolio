@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styleV1.css" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVIGATION START -->
+    <section id="navigation-bar">
+      <nav>
+        <ul>
+          <li>
+            <!--  aria-hidden="true" is used to tell screen-reader not to display this icon.        -->
+            <h1>
+              <a href="index.html"
+                ><span class="fa-solid fa-feather-pointed" aria-hidden="true"></span>
+                Pranay Kumar Ahirwar
+              </a>
+            </h1>
+          </li>
+          <li><a href="index.html#projects">Project </a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="index.html#contact">Contact </a></li>
+          <li>
+            <a href="#" target="_blank">
+              <span class="fa-brands fa-github-alt" aria-hiddne="true"></span>
+              <!--  class="sr-only attribute" is used to add text inside span tag only when, our webiste is in SCREEN-READER MODE      -->
+              <span class="sr-only">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank"
+              ><span class="fa-brands fa-linkedin" aria-hiddne="true"></span>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/drive/folders/11qBC_QAwGN7BDK8rAXGQNYF4LqD-ZQuD?usp=sharing"
+              target="_blank"
+              class="resume-button"
+              >Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- NAVIGATION END -->
+
+    <!-- INTRO SECTION START -->
+    <section id="intro">
+      <!-- id="intro" is import, it helps navigation links to navigate towards this element. -->
+      <p class="name">Poof! I'm <span>Pranay Kumar Ahirwar</span></p>
+
+      <h2>Learning Frontend</h2>
+
+      <p>
+        I dabble in the mystical arts of Azure, Python, JavaScript, Docker, and Terraform,
+        weaving spells of code and conjuring digital wonders.
+      </p>
+
+      <p>
+        On a daring quest for job opportunities, I'm on a mission to level up my skills in
+        the enchanted realms of Web development and Cloud. Join me on this epic adventure!
+        Feel free to connect with me—I'm always up for a tech chat and would love to hear
+        about your magical experiences in the world of technology.
+      </p>
+
+      <p>
+        Right now, I'm Acquiring new <strong>skills</strong> from
+        <a href="https://frontendmasters.com/teachers/jen-kramer/" target="_blank"
+          >Frontend Masters</a
+        >.
+      </p>
+    </section>
+    <!-- INTRO SECTION END -->
+
+    <!-- PROJECT SECTION START -->
+    <div class="gradient-line-break"></div>
+    <div class="background-dkblue">
+      <section id="projects">
+        <h2>Projects I'm proud of</h2>
+        <!-- 1 PROJECT -->
+        <article>
+          <div class="grid-child-text">
+            <h4>Latest Project</h4>
+            <h3>Wall of Wonder</h3>
+            <p class="black-box">
+              Description of the project. This should be fairly concise while also
+              describing the key components that you developed or worked on. It can be as
+              long as you need it to be but should at least be a few sentences long. Be
+              sure to include specific links anywhere in the description. A link looks
+              like
+              <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and
+              multiple links look <a href="#">like this</a> and <a href="#">like this</a>.
+            </p>
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SVG</li>
+            </ul>
+          </div>
+
+          <img
+            src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
+            alt="Screenshot of the Wall of Wonder."
+          />
+        </article>
+
+        <!-- 2 PROJECT -->
+        <article class="reverse">
+          <div class="grid-child-text">
+            <h4>Bootcamp Project</h4>
+            <h3>Feed-A-Star-Mole Game</h3>
+            <p class="black-box">
+              Description of the project. This should be fairly concise while also
+              describing the key components that you developed or worked on. It can be as
+              long as you need it to be but should at least be a few sentences long. Be
+              sure to include specific links anywhere in the description. A link looks
+              like
+              <a href="https://frontendmasters.github.io/bootcamp/mole">this</a>, and
+              multiple links look <a href="#">like this</a> and <a href="#">like this</a>.
+            </p>
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <img
+            src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-5.png"
+            alt="Screenshot of the Frontend Masters Bootcamp."
+          />
+        </article>
+
+        <!-- 3 PROJECT -->
+        <article>
+          <div class="grid-child-text">
+            <h4>Photography Project</h4>
+            <h3>Wall of Wonder Collection</h3>
+            <p class="black-box">
+              Description of the project. This should be fairly concise while also
+              describing the key components that you developed or worked on. It can be as
+              long as you need it to be but should at least be a few sentences long. Be
+              sure to include specific links anywhere in the description. A link looks
+              like
+              <a
+                href="https://frontendmasters.github.io/grid-flexbox-v2/grid-figure-figcaption"
+                >this</a
+              >, and multiple links look <a href="#">like this</a> and
+              <a href="#">like this</a>.
+            </p>
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS Grid</li>
+            </ul>
+          </div>
+          <img
+            src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-4.png"
+            alt="Screenshot of the Wall of Wonder Collections."
+          />
+        </article>
+      </section>
+    </div>
+
+    <div class="gradient-line-break"></div>
+    <div class="background-plum">
+      <section id="contact">
+        <h2>Contact me</h2>
+
+        <p>Nice to meet you! Please let me know what you are working on.</p>
+
+        <p><a href="#" class="contact-button"> Email me </a></p>
+      </section>
+    </div>
+
+    <div class="gradient-line-break"></div>
+
+    <!-- FOOTER SECTION START -->
+    <footer>
+      <h2>Pranay Kumar Ahirwar &middot; Cloud Engineer</h2>
+      <ul>
+        <li>
+          <a href="#" target="_blank">
+            <span class="fa-brands fa-linkedin" aria-hiddne="true"></span>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <span class="fa-brands fa-github-alt" aria-hiddne="true"></span>
+            <span class="sr-only">GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <span class="fa-solid fa-envelope-open-text" aria-hidden="true"></span>
+            <span class="sr-only">Email</span>
+          </a>
+        </li>
+      </ul>
+      <small>&copy; 2023 Pranay Kumar Ahirwar. All rights reserved. </small>
+    </footer>
+    <!-- FOOTER SECTION END -->
+  </body>
+</html>
